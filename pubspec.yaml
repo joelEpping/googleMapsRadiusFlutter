@@ -30,7 +30,7 @@ dependencies:
       ref: 4a106f7a4c91b5627704e9e2717c0326a67f8b24  
   geocoder: ^0.2.1 
   location: ^2.3.5
-  great_circle_distance: ^1.0.1
+  great_circle_distance2: ^1.0.1+1
   flutter_bloc: ^0.18.3
   equatable: ^0.2.6
 dev_dependencies:
