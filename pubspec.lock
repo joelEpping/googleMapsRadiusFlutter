@@ -83,13 +83,13 @@ packages:
       url: "git://github.com/awazgyawali/plugins/"
     source: git
     version: "0.5.13"
-  great_circle_distance:
+  great_circle_distance2:
     dependency: "direct main"
     description:
-      name: great_circle_distance
+      name: great_circle_distance2
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.1+1"
   location:
     dependency: "direct main"
     description:

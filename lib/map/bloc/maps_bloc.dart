@@ -5,7 +5,7 @@ import 'package:example1/model/radius_model.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoder/geocoder.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:great_circle_distance/great_circle_distance.dart';
+import 'package:great_circle_distance2/great_circle_distance2.dart';
 import 'package:location/location.dart';
 import './bloc.dart';
 import 'package:flutter/services.dart';
