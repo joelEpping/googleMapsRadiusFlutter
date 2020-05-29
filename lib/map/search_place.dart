@@ -23,7 +23,7 @@ class SearchPlace extends StatelessWidget {
             elevation: 5,
             child: TextField(
               onSubmitted: (_) => BlocProvider.of<MapsBloc>(context)
-                  .dispatch(FetchPlaceFromAddressPressed(place: _)),
+                  .add(FetchPlaceFromAddressPressed(place: _)),
               textInputAction: TextInputAction.search,
               decoration: InputDecoration(
                 labelText: 'Buscar',

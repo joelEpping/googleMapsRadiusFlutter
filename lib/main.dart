@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'google maps',
       home: BlocProvider(
-        builder: (context) => MapsBloc(),
+        create: (BuildContext context) => MapsBloc(),
         child: Maps(),
       ),
     );

@@ -26,7 +26,7 @@ class MapOption extends StatelessWidget {
                 ),
                 onPressed: () {
                   BlocProvider.of<MapsBloc>(context)
-                      .dispatch(MapTypeButtonPressed(currentMapType: mapType));
+                      .add(MapTypeButtonPressed(currentMapType: mapType));
                 },
               ),
             ),

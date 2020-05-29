@@ -49,7 +49,7 @@ class _RangeRadiusState extends State<RangeRadius> {
                   divisions: 12,
                   onChanged: (double value) {
                     if (!widget.isRadiusFixed) {
-                      _mapsBloc.dispatch(UpdateRangeValues(radius: value));
+                      _mapsBloc.add(UpdateRangeValues(radius: value));
                     }
                   },
                 ),
@@ -57,7 +57,7 @@ class _RangeRadiusState extends State<RangeRadius> {
                   child: Text(widget.isRadiusFixed != true
                       ? 'Fijar Radio'
                       : 'Cancelar'),
-                  onPressed: () => _mapsBloc.dispatch(IsRadiusFixedPressed(
+                  onPressed: () => _mapsBloc.add(IsRadiusFixedPressed(
                       isRadiusFixed: widget.isRadiusFixed)),
                   color:
                       widget.isRadiusFixed != true ? Colors.blue : Colors.red,

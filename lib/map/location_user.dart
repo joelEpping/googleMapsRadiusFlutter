@@ -19,8 +19,7 @@ class LocationUser extends StatelessWidget {
             color: Colors.grey[700],
           ),
           onPressed: () {
-            BlocProvider.of<MapsBloc>(context)
-                .dispatch(GetUserLocationPressed());
+            BlocProvider.of<MapsBloc>(context).add(GetUserLocationPressed());
           },
         ),
       ),

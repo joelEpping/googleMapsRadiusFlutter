@@ -31,7 +31,7 @@ dependencies:
   geocoder: ^0.2.1 
   location: ^2.3.5
   great_circle_distance: ^1.0.1
-  flutter_bloc: ^0.18.3
+  flutter_bloc: ^4.0.0
   equatable: ^0.2.6
 dev_dependencies:
   flutter_test:

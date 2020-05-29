@@ -36,7 +36,7 @@ class _MapState extends State<Maps> {
     return GoogleMap(
       onTap: (LatLng location) {
         if (_isRadiusFixed) {
-          _mapsBloc.dispatch(GenerateMarkerToCompareLocation(
+          _mapsBloc.add(GenerateMarkerToCompareLocation(
               mapPosition: location,
               radiusLocation: _lastMapPosition,
               radius: _radius));
@@ -53,7 +53,7 @@ class _MapState extends State<Maps> {
       onCameraMove: _onCameraMove,
       onCameraIdle: () {
         if (_isRadiusFixed != true)
-          _mapsBloc.dispatch(
+          _mapsBloc.add(
             GenerateMarkerWithRadius(
                 lastPosition: _lastMapPosition, radius: _radius),
           );
